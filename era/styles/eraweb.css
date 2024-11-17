@@ -1,0 +1,405 @@
+.Paypal {
+    width: 47px;
+    -moz-animation: none;
+    position: relative;
+    margin-left: 20px;
+    margin-top: -7px;
+}
+
+.eraico {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    margin-left: -40pc;
+    margin-top: -16pc;
+    width: 70px;
+    position: absolute;
+    border-radius: 22px;
+}
+
+.donate a {
+    display: flex;
+    user-select: none;
+    text-align: center;
+    width: 400px;
+    border-radius: 30px;
+    border: 0px solid transparent;
+    padding: 22px;
+    color: #fff;
+    margin-top: -4.2pc;
+    margin-left: 220px;
+    font-weight: 540;
+    background-color: #4560d89c;
+}
+
+.Discord a {
+    display: flex;
+    user-select: none;
+    text-align: center;
+    width: 200px;
+    border-radius: 30px;
+    border: 0px solid transparent;
+    padding: 22px;
+    color: #fff;
+    font-weight: 540;
+    background-color: #4560d89c;
+}
+
+.Box {
+    padding: 120px;
+    border-radius: 27px;
+    background-color: #00000060;
+    width: 800px;
+    margin-top: -22px;
+    margin-left: 20pc;
+}
+
+/* General Reset and Font Import */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    list-style: none;
+    text-decoration: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-modify: none;
+    -ms-touch-select: none;
+    transition: 0.3s;
+}
+
+body {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    overflow-x: hidden;
+    zoom: reset;
+    user-select: none;
+    background: linear-gradient(45deg, rgb(55, 92, 139), rgba(11, 149, 173, 0.603), rgb(65, 42, 83), rgba(22, 133, 177, 0.452), rgba(11, 149, 173, 0.603), rgb(36, 18, 51));
+    color: white;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* Import the fonts at the top of your CSS file */
+    font-family: @url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@500;700&display=swap');
+    overflow: hidden;
+    background-size: 400% 400%;
+    animation: bg 29s ease infinite;
+}
+
+@keyframes bg {
+    0% {
+        background-position: 30% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.Discord a:hover {
+    padding: 26px;
+    margin-top: 3.6px;
+    width: 100px;
+    transition: 0.5s ease-in-out;
+}
+
+.main-container {
+    width: 800px;
+    background: rgba(0, 0, 0, 0.089);
+    border-radius: 15px;
+    height: 40vh;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Header Section */
+.header {
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #a1a1a1;
+}
+
+/* Slideshow Section */
+.slideshow-container {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.slideshow {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.show {
+    opacity: 1;
+}
+
+/* News Section */
+.news {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.news h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.news-item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.news-item p {
+    font-size: 1rem;
+    color: #c1c1c1;
+}
+
+/* Navigation Menu */
+.menu {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu nav ul a {
+    color: #b1b5b9;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.menu nav ul a:hover {
+    background-color: #7289da;
+    color: white;
+}
+
+/* Moved styles from inline to here */
+
+.news-item:hover {
+    margin: 27px;
+    transition: 0.4s ease-in-out;
+    text-align: start;
+}
+
+.founder {
+    position: absolute;
+    width: 270px;
+}
+
+/* Launch Box Container */
+.launch-box {
+    width: 700px;
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(30, 199, 250, 0.6);
+    text-align: center;
+}
+
+.launch-box h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.launch-box p {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+.launch-btn {
+    padding: 15px 30px;
+    background-color: #7289da;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.launch-btn:hover {
+    background-color: #5b6e94;
+}
+
+.launch-btn:active {
+    background-color: #4a5a76;
+}
+
+/* Loading Popup Styles */
+.loading-popup {
+    display: none;
+    /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(39, 88, 163, 0.651);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+
+    /* Pop-out animation */
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+    animation: popIn 0.6s ease-out forwards;
+}
+
+.loading-popup p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Loading Circle */
+.loading-circle {
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid #7289da;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+
+/* Fortnite Icon */
+.fortnite-icon {
+    width: 50px;
+    height: 60px;
+    border-radius: 21px;
+    margin-bottom: 20px;
+    /* Space between icon and loading circle */
+    animation: iconAnimation 1s ease-in-out infinite;
+}
+
+/* Spin Animation for Loading Circle */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Pop-out Animation for Loading Popup */
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Smooth Close Animation */
+@keyframes popOut {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+}
+
+/* Optional: Animate Fortnite icon for effect */
+@keyframes iconAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#notification {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00000048;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 1000;
+}
+
+#notification.show {
+    top: 20px;
+    opacity: 1;
+}
